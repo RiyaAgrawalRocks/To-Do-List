@@ -8,10 +8,10 @@ export default function LoginPage() {
   const [Username, setUsername]=useState('')
   const [Password, setPassword]=useState('')
 
-  /*const changePage = async (e: FormEvent<HTMLFormElement>) =>
+  const changePage = async (e) =>
     {
-      
-    }*/
+      return 
+    }
   
   return (
     
@@ -40,7 +40,7 @@ export default function LoginPage() {
 
       </form>
 
-        <button className='bg-teal-400 flex text-justify justify-center border-t-emerald-50 m-2 p-1' >
+        <button className='bg-teal-400 flex text-justify justify-center border-t-emerald-50 m-2 p-1' onClick={changePage}>
           Login
         </button>
     </main>
